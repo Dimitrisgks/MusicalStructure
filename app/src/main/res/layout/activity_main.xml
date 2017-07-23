@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hell.mymusicstructure.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:background="@color/colorBack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/homeImage"
+                    style="@style/Menu"
+                    android:src="@drawable/home" />
+
+                <ImageView
+                    android:id="@+id/searchImage"
+                    style="@style/Menu"
+                    android:src="@drawable/search" />
+
+                <ImageView
+                    android:id="@+id/playImage"
+                    style="@style/Menu"
+                    android:src="@drawable/playlist" />
+
+                <ImageView
+                    android:id="@+id/artImage"
+                    style="@style/Menu"
+                    android:src="@drawable/artists" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/homeText"
+                    style="@style/MenuT"
+                    android:text="Home"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/searchText"
+                    style="@style/MenuT"
+                    android:text="Search"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/playText"
+                    style="@style/MenuT"
+                    android:text="Playlists"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/artText"
+                    style="@style/MenuT"
+                    android:text="Artists"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBack"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="0dp"
+                    android:text="HOME"
+                    android:textColor="@color/colorIcon"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F01111"
+                    android:padding="16dp"
+                    android:text="Here you can see the song that is playing and the artists it belongs to and the photo of th album and the progress of the song clicking on the photo it would get you to buy songs from the album "
+                    android:textColor="#E2E9FF" />
+
+
+                <ImageView
+                    android:id="@+id/ImageBuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/halou" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Curent Song Playing"
+                    android:textColor="@color/colorIcon"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1.27"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="20" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/volume"
+                style="@style/Buttons"
+                android:src="@drawable/volume" />
+
+            <ImageView
+                android:id="@+id/left"
+                style="@style/Buttons"
+                android:src="@drawable/left" />
+
+            <ImageView
+                android:id="@+id/play"
+                style="@style/Buttons"
+                android:src="@drawable/play" />
+
+            <ImageView
+                android:id="@+id/right"
+                style="@style/Buttons"
+                android:src="@drawable/right" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

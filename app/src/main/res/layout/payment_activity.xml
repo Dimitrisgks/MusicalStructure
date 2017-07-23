@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3c46b3"
+    android:orientation="vertical"
+    tools:context="com.example.hell.mymusicstructure.BuyActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Users can purchase songs based on the album they were listening to but there will be a search option so they can purchase other songs all this will happen
+through for example MEDIANET API (http://www.mndigital.com)"
+        android:textSize="25sp" />
+
+
+</LinearLayout>

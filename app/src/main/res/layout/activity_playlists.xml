@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hell.mymusicstructure.PlaylistsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:background="@color/colorBack">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/homeImage"
+                    style="@style/Menu"
+                    android:src="@drawable/home" />
+
+                <ImageView
+                    android:id="@+id/searchImage"
+                    style="@style/Menu"
+                    android:src="@drawable/search" />
+
+                <ImageView
+                    android:id="@+id/playImage"
+                    style="@style/Menu"
+                    android:src="@drawable/playlist" />
+
+                <ImageView
+                    android:id="@+id/artImage"
+                    style="@style/Menu"
+                    android:src="@drawable/artists" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/homeText"
+                    style="@style/MenuT"
+                    android:text="Home"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/searchText"
+                    style="@style/MenuT"
+                    android:text="Search"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/playText"
+                    style="@style/MenuT"
+                    android:text="Playlists"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/artText"
+                    style="@style/MenuT"
+                    android:text="Artists"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBack"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F01111"
+                    android:padding="16dp"
+                    android:text="here you can either select your existing playlists,create new or listen to playlists that are linked from other sites"
+                    android:textColor="#E2E9FF" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:paddingTop="16dp"
+                        android:text="Recent Plalists:"
+                        android:textColor="@color/colorIcon"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:paddingTop="16dp"
+                        android:text="random playlist"
+                        android:textColor="@color/colorIcon"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/play" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:paddingTop="16dp"
+                        android:text="random playlist"
+                        android:textColor="@color/colorIcon"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/play" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:paddingTop="16dp"
+                        android:text="random site playlist"
+                        android:textColor="@color/colorIcon"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/last"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/play" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:text="Currently Playing Song"
+                android:textColor="@color/colorIcon"
+                android:textSize="25sp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1.27"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="40" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/volume"
+                    style="@style/Buttons"
+                    android:src="@drawable/volume" />
+
+                <ImageView
+                    android:id="@+id/left"
+                    style="@style/Buttons"
+                    android:src="@drawable/left" />
+
+                <ImageView
+                    android:id="@+id/play"
+                    style="@style/Buttons"
+                    android:src="@drawable/play" />
+
+                <ImageView
+                    android:id="@+id/right"
+                    style="@style/Buttons"
+                    android:src="@drawable/right" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="16dp"
+            android:text="Create a new playlist"
+            android:textColor="@color/colorIcon"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout"
+            android:src="@drawable/plus" />
+    </RelativeLayout>
+</ScrollView>
